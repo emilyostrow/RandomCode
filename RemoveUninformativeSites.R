@@ -3,8 +3,7 @@ library(phylotools)
 library(stringi)
 
 ##this code reads in a phylip and removes phylogenetically uninformative sites, 
-##replacing them with whatever you specify. This is an accurate but ROUGH script.
-##The output is a csv you will have to get back into a phylip with some editing
+##replacing them with whatever you specify.
 
 file <- read.phylip("oldinput.phy")
 replacementChar <- "N"
