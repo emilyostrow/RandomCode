@@ -72,5 +72,9 @@ for (i in 1:length(file$seq.name)){
 }
 names(FinalList) <- namesPhy
 
-write.csv(t(FinalList), "editedPhy.csv")
-
+sink("output.phy")
+cat(length(file$seq.name), "\t", length(SeqList[[1]][[1]]), "\n")
+for (i in 1:length(file$seq.name)){
+  cat(file$seq.name[i], "\t", FinalList[[i]], "\n")
+}
+sink()
