@@ -12,7 +12,6 @@ replacementChar <- "N"
 
 
 namesPhy <- file$seq.name
-SeqVec1 <- strsplit(file$seq.text[1],split = "")
 SeqList <- list()
  
 for (i in 1:length(file$seq.name)){
